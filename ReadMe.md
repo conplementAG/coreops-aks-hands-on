@@ -104,3 +104,19 @@ kubectl apply -f hpa.yaml -n ws-xxx
 
 kubectl get horizontalpodautoscaler -n ws-xxx # or 'kubectl get hpa' for short
 ```
+
+### 9. Packaging and interpolation via Helm
+
+```bash
+cd ..
+cd 05_helm
+
+helm create azure-vote
+```
+
+Now, you can delete these sections:
+- charts
+- values.yaml file containts (leave the empty file)
+- everything inside templates folder
+
+Copy your resources into your helm chart. Interpolate some values / variables. Releaes the chart.
