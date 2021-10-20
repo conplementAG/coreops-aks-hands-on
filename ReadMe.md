@@ -89,3 +89,18 @@ kubectl get ingress --namespace ws-xxx
 # to check the certificate you can also execute:
 kubectl get certificates --namespace ws-xxx
 ```
+
+### 8. Load testing & autoscaling
+
+```bash
+cd ..
+cd 04_load_test
+
+# run the load test before deploying autoscaling, observe
+docker run -i loadimpact/k6 run --vus 10 --duration 60s  --insecure-skip-tls-verify - <script.js
+
+# deploy the autoscaling functionality, now you can run the load test again and observe
+kubectl apply -f hpa.yaml -n ws-xxx
+
+kubectl get horizontalpodautoscaler -n ws-xxx # or 'kubectl get hpa' for short
+```
