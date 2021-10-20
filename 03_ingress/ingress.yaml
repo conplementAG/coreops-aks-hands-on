@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: azure-vote-front-ingress-coreops-public
+  annotations:
+    kubernetes.io/ingress.class: coreops-public
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    acme.cert-manager.io/http01-ingress-class: coreops-public
+spec:
+  tls:
+    - hosts:
+      - !!replace-with-host!!
+      secretName: azure-vote-front-secret-coreops-public
+  rules:
+    - host: !!replace-with-host!!
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: azure-vote-front
+                port:
+                  number: 80
