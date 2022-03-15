@@ -1,4 +1,4 @@
-# CoreOps AKS Kuberentes Hands-on Workshop
+# CoreOps AKS Kubernetes Hands-on Workshop
 
 ### Prerequisites
 
