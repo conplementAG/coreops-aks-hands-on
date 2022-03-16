@@ -120,3 +120,9 @@ Now, you can delete these sections:
 - everything inside templates folder
 
 Copy your resources into your helm chart. Interpolate some values / variables. Releaes the chart.
+
+### 10. Discussion around key concepts behind CoreOps and DevOps split
+
+- where are the application Azure resources located?
+- who operates these resources (SQL DB etc.)?
+- how many subscriptions are there?
