@@ -4,8 +4,9 @@
 
 1. Docker (https://docs.docker.com/get-docker/)
 2. kubectl (https://kubernetes.io/docs/tasks/tools/)
-3. copsctl (https://github.com/conplementAG/copsctl#installation)
-4. helm (https://helm.sh/docs/intro/quickstart/#install-helm)
+3. kubelogin (https://azure.github.io/kubelogin/install.html)
+4. copsctl (https://github.com/conplementAG/copsctl#installation)
+5. helm (https://helm.sh/docs/intro/quickstart/#install-helm)
 
 ## Workshop
 
