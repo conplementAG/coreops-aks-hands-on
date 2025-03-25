@@ -3,10 +3,10 @@ kind: Ingress
 metadata:
   name: azure-vote-front-ingress-coreops-public
   annotations:
-    kubernetes.io/ingress.class: coreops-public
     cert-manager.io/cluster-issuer: "letsencrypt-staging"
     acme.cert-manager.io/http01-ingress-class: coreops-public
 spec:
+  ingressClassName: coreops-public
   tls:
     - hosts:
       - !!replace-with-host!!

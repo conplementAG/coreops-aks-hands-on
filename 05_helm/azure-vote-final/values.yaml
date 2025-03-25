@@ -1,2 +1,2 @@
-FrontendVersion: "v1"
-Host: "!!!your-host-here!!!"
+FrontendVersion: latest
+Host: !!!your-host-here!!!
