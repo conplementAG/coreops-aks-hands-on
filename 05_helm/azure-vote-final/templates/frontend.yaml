@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: azure-vote-front
-        image: mcr.microsoft.com/azuredocs/azure-vote-front:{{ .Values.FrontendVersion }}
+        image: cponeneucopsacr.azurecr.io/azure-vote-front:{{ .Values.FrontendVersion }}
         readinessProbe:
           httpGet:
             path: /

@@ -48,7 +48,7 @@ kubectl run redis-debug-pod-with-cli --rm -it --namespace ws-xxx --image redis -
 # now you can play around with set x value; get x; etc...
 ```
 
-### 5. Create the .NET frontend (Kubernetes Deployment & Service)
+### 5. Create the frontend (Kubernetes Deployment & Service)
 
 ```bash
 cd ..
@@ -58,7 +58,7 @@ kubectl apply -f deployment-and-service.yaml --namespace ws-xxx
 kubectl get deploy,service --namespace ws-xxx
 ```
 
-### 6. Test the .NET frontend
+### 6. Test the frontend
 
 - test via curl inside the cluster
 
